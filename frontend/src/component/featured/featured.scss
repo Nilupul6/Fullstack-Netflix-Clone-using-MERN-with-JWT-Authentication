@@ -1,0 +1,102 @@
+.featured{
+    height: 80vh;
+    position: relative;
+    
+
+    .category {
+      position: absolute;
+      top: 80px;
+      left: 50px;
+      font-size: 30px;
+      font-weight: 500;
+      color: white;
+      display: flex;
+      align-items: center;
+
+      .bimg{
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+      }
+
+      select{
+        background-color: var(--main-color);
+        border: 1px solid white;
+        width: 180px;
+        height: 40px;
+        border-radius: 10px;
+        color: white;
+        margin-left: 20px;
+        padding: 5px;
+        cursor: pointer;
+      }
+      
+    }
+
+    .title {
+      // font-size: xx-large;
+      // font-weight: bolder;
+      font-size: 3rem; /* Adjust as needed for the desired size */
+    font-weight: 700; /* Same as bolder */
+    font-family: 'Arial Black', sans-serif; /* A strong sans-serif font */
+    color: #fff; /* White color for visibility */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds a subtle shadow for depth */
+    text-transform: uppercase; /* Capitalizes all letters */
+    letter-spacing: 2px; /* Adds spacing between letters for impact */
+    text-align: center; /* Centers the text horizontally */
+    margin-bottom: 20px; 
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+    }
+
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .info {
+      width: 35%;
+      position: absolute;
+      left: 50px;
+      bottom: 75px;
+      color: white;
+      display: flex;
+      flex-direction: column;
+
+      img{
+        width: 500px;
+      }
+
+      .desc {
+        margin: 20px 0px;
+      }
+
+      .buttons{
+        display: flex;
+        button{
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            font-weight: 500;
+            margin-right: 10px;
+            cursor: pointer;
+
+            &.play {
+              background-color: white;
+              color: var(--main-color);
+            }
+
+            &.more {
+              background-color: gray;
+              color: white;
+            }
+
+            span{
+              margin-left: 5px;
+            }
+        }
+      }
+    }
+}
